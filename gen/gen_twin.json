@@ -1,0 +1,32 @@
+{
+  "purpose": "Tool-card honesty: map the hosted generator to its open-source twin and record which one actually ran. If you circle DALL-E on the tool card, the stub wrote the same meta JSON shape DALL-E would have written - with not_a_photo_of_the_sku = true.",
+  "task": "text-to-image still-life (no people prompts)",
+  "pairs": [
+    {
+      "sku_intended": "KND-01",
+      "hosted": {
+        "name": "openai/dall-e-3",
+        "status": "NOT RUN - no OPENAI_API_KEY in this environment (declared fallback)",
+        "approx_cost_if_run": "$0.04-0.08 per 1024x1024 image"
+      },
+      "oss_twin": {
+        "name": "stabilityai/stable-diffusion-xl-1.0-base",
+        "license": "OpenRAIL++",
+        "status": "NOT RUN - no diffusers/checkpoint in this lab. Named as the OSS twin only; no checkpoint is faked."
+      },
+      "used": {
+        "name": "stub-render-v1",
+        "script": "gen/stub_render.py",
+        "status": "RUN - $0, deterministic Pillow placeholder",
+        "outputs": [
+          "outputs/gen/KND-01_stub_still_life.png",
+          "outputs/gen/KND-01_gen_meta.json"
+        ]
+      },
+      "prompt_file": "gen/prompt_still_life.txt",
+      "prompt_pin": "gen/prompt_pin.json",
+      "guard": "meta JSON carries not_a_photo_of_the_sku = true; pixels stay in outputs/gen/ (never gold/, never fixtures/images/)"
+    }
+  ],
+  "people_policy": "The pinned prompt contains no people/hands/faces terms. See ethics_note.md > Generated pixels."
+}

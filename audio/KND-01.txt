@@ -1,0 +1,3 @@
+[hand-written transcript sidecar - NO Whisper ran; declared fallback in README]
+seller: Mama Njeri (KND-01) | note: seller voice note, 12s, recorded by hand-typed stub
+transcript: "This is the kiondo I wove myself in Kajiado, sisal from the farm, leather straps, natural tan. The photo is exactly what you get, no plastic."

@@ -1,0 +1,25 @@
+{
+  "sku_intended": "KND-01",
+  "model": "stub-render-v1",
+  "provider": "local Pillow placeholder (no API, no checkpoint)",
+  "prompt_file": "gen/prompt_still_life.txt",
+  "prompt_sha256": "7556f494ca8e37f5329b53a4ea7d808fac9630acbd607c1f87fd5b45385c62f1",
+  "prompt_pin": "gen/prompt_pin.json",
+  "not_a_photo_of_the_sku": true,
+  "label_on_image": "STUB RENDER / NOT A PHOTO OF THE SKU",
+  "generated_at": "2026-10-12T19:47:20+00:00",
+  "outputs": {
+    "pixels": "outputs/gen/KND-01_stub_still_life.png",
+    "kept_out_of": [
+      "gold/",
+      "fixtures/images/"
+    ]
+  },
+  "dalle_would_have_written": {
+    "model": "dall-e-3",
+    "size": "1024x1024",
+    "quality": "standard",
+    "note": "same JSON shape, same not_a_photo_of_the_sku=true key; status would flip to 'live' and cost ~$0.04-0.08/image"
+  },
+  "people_terms_in_prompt": false
+}

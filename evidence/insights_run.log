@@ -1,0 +1,7 @@
+insights.py: n=4  flagged=1  transcripts=1  privacy_flags=0
+  KND-01   ok   score=0.554  msg_chars=159
+  NK-99    FLAG score=0.136  msg_chars=304
+  THD-02   ok   score=0.747  msg_chars=158
+  KNG-04   ok   score=0.711  msg_chars=147
+catalog.json unchanged (sha256 071b2d74a768...)
+insights -> insights.json

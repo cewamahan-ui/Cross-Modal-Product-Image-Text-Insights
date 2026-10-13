@@ -1,0 +1,19 @@
+{
+  "prompt_file": "gen/prompt_still_life.txt",
+  "prompt_sha256": "7556f494ca8e37f5329b53a4ea7d808fac9630acbd607c1f87fd5b45385c62f1",
+  "pin_style": "sha256 of the prompt file bytes - same fail-closed idea as the Week 8 prompt pin",
+  "sku_intended": "KND-01",
+  "task": "text-to-image still-life (no people)",
+  "guardrails": [
+    "prompt contains no people/hands/faces/children terms",
+    "output meta must carry not_a_photo_of_the_sku = true",
+    "pixels only ever land in outputs/gen/"
+  ],
+  "models": {
+    "primary_not_run": "openai/dall-e-3 (no OPENAI_API_KEY - declared fallback)",
+    "oss_twin_not_run": "stabilityai/stable-diffusion-xl-1.0-base (no diffusers/checkpoint - declared, no faked checkpoint)",
+    "used_and_run": "stub-render-v1 via gen/stub_render.py ($0, deterministic)"
+  },
+  "mapping": "gen/gen_twin.json",
+  "verified_by": ["gen/stub_render.py (fail-closed on rerun)", "tests/test_gold.py::test_prompt_pin"]
+}

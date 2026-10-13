@@ -1,0 +1,39 @@
+{
+  "encoder_pin_version": "1.0.0",
+  "generated_for": "mismatch_report.json (SokoniHub catalog join, Week 10)",
+
+  "scorer": "lab-bow-v1",
+  "scorer_kind": "bag-of-words encoder over the joined listing/tag vocabulary (pure Python, offline, deterministic)",
+  "scorer_source_file": "mismatch.py::lab_bow_agreement",
+  "scorer_source_sha256": "5beac5be2f250138040541bcd46b9e3abddeea7f6d23f884451c9703f2361072",
+  "produced_scores": [
+    "mismatch_report.json",
+    "insights.json (scores copied through, not recomputed)",
+    "rates.json (flags derived from the same report)"
+  ],
+  "why_not_clip_as_scorer": "On this teaching slice (n=4) lab-bow-v1 separates the gold pair with wide margins (KND-01 0.5539 vs NK-99 0.1361) and reruns offline. CLIP scores were thin on the synthetic drawings, so CLIP is recorded as an informational cross-check, never as the official score. If you used tags instead of CLIP, say so: tags scored, CLIP cross-checked.",
+
+  "cross_check": {
+    "hub_id": "sentence-transformers/clip-ViT-B-32",
+    "revision": "327ab6726d33c0e22f920c83f2ff9e4bd38ca37f",
+    "device": "cpu",
+    "api_calls": 0,
+    "informational_threshold": 0.22,
+    "role": "informational only - does not produce mismatch_report.json official scores",
+    "evidence": [
+      "evidence/clip_crosscheck.log",
+      "encode_cache/clip_embeddings.json",
+      "encode_cache/manifest.json"
+    ],
+    "ran_at": "see encode_cache/manifest.json (generated_at)"
+  },
+
+  "transformers_ran": true,
+  "transformers_ran_note": "sentence-transformers CLIP ran locally on CPU from the cached snapshot for the cross-check; official scores are lab-bow-v1. No API keys, no GPU, $0.",
+
+  "did_not_run": {
+    "openai_dall_e_3": "no image API key in this environment - stub_render.py path declared in README",
+    "stable_diffusion": "no diffusers/checkpoint here - named as OSS twin in gen/gen_twin.json, no faked checkpoint",
+    "whisper": "no seller audio recorded - hand-written sidecar audio/KND-01.txt declared in README"
+  }
+}

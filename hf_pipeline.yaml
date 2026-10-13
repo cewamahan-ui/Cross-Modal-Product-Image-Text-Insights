@@ -1,0 +1,38 @@
+# Week 10 - SokoniHub cross-modal join (Deliverable 3)
+# This pipeline RAN locally on CPU as a cross-check (0 API calls, $0).
+# Official mismatch_report.json scores come from lab-bow-v1 (encoder_pin.json).
+pipeline:
+  task: feature-extraction            # dual-encoder embeddings for image<->text join
+  model: sentence-transformers/clip-ViT-B-32
+  revision: 327ab6726d33c0e22f920c83f2ff9e4bd38ca37f   # pinned hub commit; snapshot cached locally
+  device: cpu
+  framework: sentence-transformers   # wraps Hugging Face transformers CLIP
+  max_seq_length: 77
+  embedding_dim: 512
+
+run:
+  status: ran                        # NOT yaml-only: real run, see evidence
+  command: python mismatch.py --with-clip
+  api_calls: 0
+  cost_usd: 0
+  evidence:
+    - evidence/clip_crosscheck.log            # stdout of the live run
+    - encode_cache/clip_embeddings.json       # embeddings it produced
+    - encode_cache/manifest.json              # model + revision + timestamp
+  what_it_scores: "informational column clip_agreement in mismatch_report.json"
+  what_it_does_not_score: "official agreement/flag columns = lab-bow-v1"
+
+fallback:
+  if_transformers_unavailable: >-
+    lab-bow-v1 over sidecar tags produces every official score; run
+    `python mismatch.py` (stdlib only). Declared in README > Fallbacks.
+  if_model_not_cached: >-
+    first run downloads snapshot 327ab67... from the Hub (unauthenticated, 0 cost),
+    or delete --with-clip and rely on lab-bow-v1 alone.
+
+generation:
+  task: text-to-image (still-life, no people)
+  requested_model: openai/dall-e-3           # not run: no OPENAI_API_KEY (declared)
+  oss_twin: stabilityai/stable-diffusion-xl-1.0-base  # not run: no diffusers/checkpoint (declared)
+  used: stub-render-v1 (gen/stub_render.py)  # run: prompt + hash pin + meta JSON
+  mapping: gen/gen_twin.json

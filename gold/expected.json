@@ -1,0 +1,7 @@
+{
+  "description": "Gold check for the Week 10 teaching pair. flag=true means mismatch flagged.",
+  "expected": {
+    "KND-01": { "flag": false, "why": "kiondo photo, kiondo title - must be CLEAR" },
+    "NK-99": { "flag": true, "why": "kiondo photo, Nike-titled listing - must be FLAGGED" }
+  }
+}

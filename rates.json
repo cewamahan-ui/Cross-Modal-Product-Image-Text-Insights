@@ -1,0 +1,36 @@
+{
+  "generated_by": "rates.py",
+  "generated_at": "2026-10-12T19:47:17+00:00",
+  "source": "mismatch_report.json",
+  "scored_by": "lab-bow-v1",
+  "threshold": 0.35,
+  "n_total": 4,
+  "flags_total": 1,
+  "overall": {
+    "flag_rate": 0.25,
+    "flags": 1,
+    "n": 4,
+    "caption": "1 of 4 listings flagged"
+  },
+  "by_category": {
+    "bags": {
+      "flag_rate": 0.5,
+      "flags": 1,
+      "n": 2,
+      "caption": "1 of 2 listings flagged"
+    },
+    "home": {
+      "flag_rate": 0.0,
+      "flags": 0,
+      "n": 1,
+      "caption": "0 of 1 listings flagged"
+    },
+    "kitchen": {
+      "flag_rate": 0.0,
+      "flags": 0,
+      "n": 1,
+      "caption": "0 of 1 listings flagged"
+    }
+  },
+  "honesty_note": "n is a teaching slice: the three teaching SKUs plus one I added (n=4), fixtures only. Quote the denominator with every rate. Do not present these as SokoniHub market rates - there is no traffic sample here."
+}

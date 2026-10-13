@@ -1,0 +1,10 @@
+mismatch.py: n=4  threshold=0.35  scorer=lab-bow-v1  pin_ok=True
+  KND-01   agreement=0.554  clear
+  NK-99    agreement=0.136  FLAGGED
+  THD-02   agreement=0.747  clear
+  KNG-04   agreement=0.711  clear
+  CLIP cross-check: not run (not requested (run: python mismatch.py --with-clip))
+gold check: PASS
+  KND-01: expected clear, got clear (agreement=0.5539) -> OK
+  NK-99: expected flagged, got flagged (agreement=0.1361) -> OK
+report -> mismatch_report.json

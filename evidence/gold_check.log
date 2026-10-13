@@ -1,0 +1,9 @@
+[gold] KND-01: expected clear, report says clear -> OK
+[gold] NK-99: expected flagged, report says flagged -> OK
+[pin ] lab_bow_agreement source hash matches encoder_pin.json (5beac5be2f25…) -> OK
+[pin ] scorer named in pin matches report scored_by -> OK
+[thr ] report threshold 0.35 == mismatch.py THRESHOLD 0.35 -> OK
+[n   ] report n=4 matches 4 result rows -> OK
+[clip] cross-check ran at pinned revision 327ab6726d33… -> OK
+
+CHECK PASS: gold pair correct, pin honest, report consistent.

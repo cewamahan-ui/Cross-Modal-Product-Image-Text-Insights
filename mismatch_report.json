@@ -1,0 +1,101 @@
+{
+  "generated_by": "mismatch.py",
+  "generated_at": "2026-10-12T19:47:15+00:00",
+  "client": "SokoniHub",
+  "scored_by": "lab-bow-v1",
+  "encoder_pin_sha256": "cedb0eed7d5a859baba9e4388cfa9a001beeb5b60a18d459f3d031d59fd25567",
+  "encoder_source_sha256": "5beac5be2f250138040541bcd46b9e3abddeea7f6d23f884451c9703f2361072",
+  "score_semantics": "agreement = cosine(BoW(title+description), BoW(sidecar tags)); flag = agreement < threshold",
+  "threshold": 0.35,
+  "n": 4,
+  "catalog_sha256": "071b2d74a7681ed28a80b7b92e8ce9556270966291f90f227f0afb15a2a4c7a9",
+  "results": [
+    {
+      "sku": "KND-01",
+      "category": "bags",
+      "agreement": 0.5539,
+      "flag": false,
+      "tags": [
+        "kiondo",
+        "woven",
+        "sisal",
+        "tote",
+        "bag",
+        "tan",
+        "leather straps"
+      ],
+      "tag_sha256": "8981d9c064eb21693f3a498da4a85c489c3bacd1da37698d86a7e44142293b99",
+      "image": "fixtures/images/KND-01.png"
+    },
+    {
+      "sku": "NK-99",
+      "category": "bags",
+      "agreement": 0.1361,
+      "flag": true,
+      "tags": [
+        "kiondo",
+        "woven",
+        "sisal",
+        "bag",
+        "handmade",
+        "tan"
+      ],
+      "tag_sha256": "80ea705bd6f38fc3cd361db0009322c0b5bbe8d8fc1cbf879befd55c8dda664b",
+      "image": "fixtures/images/NK-99.png"
+    },
+    {
+      "sku": "THD-02",
+      "category": "kitchen",
+      "agreement": 0.7467,
+      "flag": false,
+      "tags": [
+        "sufuria",
+        "enamel",
+        "pot",
+        "cooking",
+        "blue",
+        "speckled",
+        "24cm"
+      ],
+      "tag_sha256": "3576bbd21451dd91718ef1eccda7fc29244351575211d4dbf593e8464f8fe311",
+      "image": "fixtures/images/THD-02.png"
+    },
+    {
+      "sku": "KNG-04",
+      "category": "home",
+      "agreement": 0.7107,
+      "flag": false,
+      "tags": [
+        "kikoi",
+        "cotton",
+        "throw",
+        "fringe",
+        "red",
+        "woven"
+      ],
+      "tag_sha256": "d64bd636eef5ce1576b3de0a15644b249d5211f61d6e5ed7a90904f8d4b7bb2b",
+      "image": "fixtures/images/KNG-04.png"
+    }
+  ],
+  "clip_cross_check": {
+    "ran": false,
+    "error": "not requested (run: python mismatch.py --with-clip)"
+  },
+  "gold_check": {
+    "pass": true,
+    "detail": {
+      "KND-01": {
+        "result": "clear",
+        "expected": "clear",
+        "agreement": 0.5539,
+        "ok": true
+      },
+      "NK-99": {
+        "result": "flagged",
+        "expected": "flagged",
+        "agreement": 0.1361,
+        "ok": true
+      }
+    }
+  }
+}

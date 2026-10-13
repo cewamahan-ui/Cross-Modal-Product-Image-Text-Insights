@@ -1,0 +1,104 @@
+{
+  "generated_by": "insights.py",
+  "generated_at": "2026-10-12T19:47:16+00:00",
+  "client": "SokoniHub",
+  "n": 4,
+  "scored_by": "lab-bow-v1",
+  "threshold": 0.35,
+  "source_report": "mismatch_report.json",
+  "source_report_sha256": "a204b224c42f0b9afcbb273bd495d9a010a23c13ebd3e051e4576ed0c7b66d82",
+  "title_policy": "scores and copy only; no script in this repo writes listing titles back to catalog.json",
+  "items": [
+    {
+      "sku": "KND-01",
+      "category": "bags",
+      "score": 0.5539,
+      "flag": false,
+      "seller_message": "Photo tags (kiondo, woven, sisal, tote, bag, tan, leather straps) match your listing text - no action needed. Score 0.5539 against threshold 0.35 (lab-bow-v1).",
+      "privacy_flag": false,
+      "privacy_terms_matched": [],
+      "transcript": {
+        "sidecar": "audio/KND-01.txt",
+        "source": "hand-written sidecar (no Whisper run)",
+        "seller": "Mama Njeri (KND-01) | note: seller voice note, 12s, recorded by hand-typed stub",
+        "text": "\"This is the kiondo I wove myself in Kajiado, sisal from the farm, leather straps, natural tan. The photo is exactly what you get, no plastic.\""
+      },
+      "title": "Handwoven kiondo tote - sisal, Kajiado make",
+      "title_source": "catalog.json (read-only)",
+      "title_rewritten": false,
+      "tags": [
+        "kiondo",
+        "woven",
+        "sisal",
+        "tote",
+        "bag",
+        "tan",
+        "leather straps"
+      ]
+    },
+    {
+      "sku": "NK-99",
+      "category": "bags",
+      "score": 0.1361,
+      "flag": true,
+      "seller_message": "Please review before publishing: the photo tags (kiondo, woven, sisal, bag, handmade, tan) do not agree with your title \"Nike Sportswear crossbody bag, black swoosh\" (score 0.1361 < threshold 0.35). Either correct the title or re-shoot the photo. A human moderator sees this draft before the seller does.",
+      "privacy_flag": false,
+      "privacy_terms_matched": [],
+      "transcript": null,
+      "title": "Nike Sportswear crossbody bag, black swoosh",
+      "title_source": "catalog.json (read-only)",
+      "title_rewritten": false,
+      "tags": [
+        "kiondo",
+        "woven",
+        "sisal",
+        "bag",
+        "handmade",
+        "tan"
+      ]
+    },
+    {
+      "sku": "THD-02",
+      "category": "kitchen",
+      "score": 0.7467,
+      "flag": false,
+      "seller_message": "Photo tags (sufuria, enamel, pot, cooking, blue, speckled, 24cm) match your listing text - no action needed. Score 0.7467 against threshold 0.35 (lab-bow-v1).",
+      "privacy_flag": false,
+      "privacy_terms_matched": [],
+      "transcript": null,
+      "title": "Blue speckled enamel sufuria, 24cm deep pot",
+      "title_source": "catalog.json (read-only)",
+      "title_rewritten": false,
+      "tags": [
+        "sufuria",
+        "enamel",
+        "pot",
+        "cooking",
+        "blue",
+        "speckled",
+        "24cm"
+      ]
+    },
+    {
+      "sku": "KNG-04",
+      "category": "home",
+      "score": 0.7107,
+      "flag": false,
+      "seller_message": "Photo tags (kikoi, cotton, throw, fringe, red, woven) match your listing text - no action needed. Score 0.7107 against threshold 0.35 (lab-bow-v1).",
+      "privacy_flag": false,
+      "privacy_terms_matched": [],
+      "transcript": null,
+      "title": "Kikoi cotton throw with fringe, market red",
+      "title_source": "catalog.json (read-only)",
+      "title_rewritten": false,
+      "tags": [
+        "kikoi",
+        "cotton",
+        "throw",
+        "fringe",
+        "red",
+        "woven"
+      ]
+    }
+  ]
+}

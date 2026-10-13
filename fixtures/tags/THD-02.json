@@ -1,0 +1,7 @@
+{
+  "sku": "THD-02",
+  "image": "fixtures/images/THD-02.png",
+  "tagger": "hand-authored teaching sidecar (stands in for a vision tagger; no vision model ran on this drawing)",
+  "tags": ["sufuria", "enamel", "pot", "cooking", "blue", "speckled", "24cm"],
+  "privacy_tags": []
+}

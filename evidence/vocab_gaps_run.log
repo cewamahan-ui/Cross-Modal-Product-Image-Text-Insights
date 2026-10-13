@@ -1,0 +1,3 @@
+vocab: union=61  text_seen_in_tags=0.322  tags_seen_in_text=0.9048
+example text-only gaps: ['a', 'and', 'at', 'black', 'books', 'branded', 'claims', 'coast']
+vocab_gaps -> vocab_gaps.json

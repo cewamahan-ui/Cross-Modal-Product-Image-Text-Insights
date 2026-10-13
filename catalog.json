@@ -1,0 +1,47 @@
+{
+  "catalog_version": "1.0.0",
+  "client": "SokoniHub",
+  "note": "Teaching slice: the three teaching SKUs plus one I added (KNG-04). Not a production catalog. Built from hand-authored fixtures - no marketplace crawl, no faces, no AfyaPlus triage fixtures.",
+  "skus": [
+    {
+      "sku": "KND-01",
+      "title": "Handwoven kiondo tote - sisal, Kajiado make",
+      "description": "Large handwoven sisal kiondo with leather straps, made in Kajiado. Natural tan colour, market bag for produce and books.",
+      "category": "bags",
+      "price_kes": 1450,
+      "image": "fixtures/images/KND-01.png",
+      "tags_sidecar": "fixtures/tags/KND-01.json",
+      "provenance": "teaching fixture (Week 10)"
+    },
+    {
+      "sku": "NK-99",
+      "title": "Nike Sportswear crossbody bag, black swoosh",
+      "description": "Branded crossbody shoulder bag in black with a swoosh logo. Seller claims original Nike stock, new with tags.",
+      "category": "bags",
+      "price_kes": 2300,
+      "image": "fixtures/images/NK-99.png",
+      "tags_sidecar": "fixtures/tags/NK-99.json",
+      "provenance": "teaching fixture (Week 10) - deliberate title/photo mismatch pair with KND-01"
+    },
+    {
+      "sku": "THD-02",
+      "title": "Blue speckled enamel sufuria, 24cm deep pot",
+      "description": "24cm deep enamel cooking pot, blue speckle finish, for ugali and stews. New stock.",
+      "category": "kitchen",
+      "price_kes": 890,
+      "image": "fixtures/images/THD-02.png",
+      "tags_sidecar": "fixtures/tags/THD-02.json",
+      "provenance": "teaching fixture (Week 10)"
+    },
+    {
+      "sku": "KNG-04",
+      "title": "Kikoi cotton throw with fringe, market red",
+      "description": "Handloomed cotton kikoi throw in market red stripes, tasselled fringe, made at the coast.",
+      "category": "home",
+      "price_kes": 1100,
+      "image": "fixtures/images/KNG-04.png",
+      "tags_sidecar": "fixtures/tags/KNG-04.json",
+      "provenance": "added by learner (Week 10) - extra SKU beyond the teaching pair"
+    }
+  ]
+}

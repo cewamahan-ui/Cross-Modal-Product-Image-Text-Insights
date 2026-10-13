@@ -1,0 +1,7 @@
+{
+  "sku": "KND-01",
+  "image": "fixtures/images/KND-01.png",
+  "tagger": "hand-authored teaching sidecar (stands in for a vision tagger; no vision model ran on this drawing)",
+  "tags": ["kiondo", "woven", "sisal", "tote", "bag", "tan", "leather straps"],
+  "privacy_tags": []
+}

@@ -1,0 +1,11 @@
+{
+  "model": "sentence-transformers/clip-ViT-B-32",
+  "revision": "327ab6726d33c0e22f920c83f2ff9e4bd38ca37f",
+  "device": "cpu",
+  "api_calls": 0,
+  "generated_at": "2026-10-12T15:14:22+00:00",
+  "cache_files": [
+    "encode_cache/clip_embeddings.json"
+  ],
+  "note": "CLIP cross-check only; mismatch_report.json official scores come from lab-bow-v1 (encoder_pin.json)."
+}

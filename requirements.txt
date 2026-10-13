@@ -1,0 +1,8 @@
+# Official path (mismatch.py / insights.py / rates.py / search_helper.py /
+# vocab_gaps.py / check_mismatch.py) is stdlib-only. Extras:
+pillow>=10            # fixture drawings + stub renderer
+pyyaml>=6            # hf_pipeline.yaml is read as YAML by tooling/humans
+# Optional: live CLIP cross-check (python mismatch.py --with-clip)
+sentence-transformers>=3
+# Tests
+pytest>=8

@@ -1,0 +1,164 @@
+{
+  "generated_by": "vocab_gaps.py",
+  "generated_at": "2026-10-12T19:47:19+00:00",
+  "encoder": "lab-bow-v1 (exact-token bag of words)",
+  "n_skus": 4,
+  "vocab_union_size": 61,
+  "text_vocab_size": 59,
+  "tag_vocab_size": 21,
+  "coverage": {
+    "text_tokens_seen_in_tags": 0.322,
+    "tag_tokens_seen_in_text": 0.9048,
+    "caption": "19 shared tokens of 59 text / 21 tag tokens (teaching slice)"
+  },
+  "per_sku": [
+    {
+      "sku": "KND-01",
+      "text_only": [
+        "and",
+        "books",
+        "colour",
+        "for",
+        "handwoven",
+        "in",
+        "kajiado",
+        "large",
+        "made",
+        "make",
+        "market",
+        "natural",
+        "produce",
+        "with"
+      ],
+      "tags_only": [
+        "woven"
+      ],
+      "shared": [
+        "bag",
+        "kiondo",
+        "leather",
+        "sisal",
+        "straps",
+        "tan",
+        "tote"
+      ]
+    },
+    {
+      "sku": "NK-99",
+      "text_only": [
+        "a",
+        "black",
+        "branded",
+        "claims",
+        "crossbody",
+        "in",
+        "logo",
+        "new",
+        "nike",
+        "original",
+        "seller",
+        "shoulder",
+        "sportswear",
+        "stock",
+        "swoosh",
+        "tags",
+        "with"
+      ],
+      "tags_only": [
+        "handmade",
+        "kiondo",
+        "sisal",
+        "tan",
+        "woven"
+      ],
+      "shared": [
+        "bag"
+      ]
+    },
+    {
+      "sku": "THD-02",
+      "text_only": [
+        "and",
+        "deep",
+        "finish",
+        "for",
+        "new",
+        "speckle",
+        "stews",
+        "stock",
+        "ugali"
+      ],
+      "tags_only": [],
+      "shared": [
+        "24cm",
+        "blue",
+        "cooking",
+        "enamel",
+        "pot",
+        "speckled",
+        "sufuria"
+      ]
+    },
+    {
+      "sku": "KNG-04",
+      "text_only": [
+        "at",
+        "coast",
+        "handloomed",
+        "in",
+        "made",
+        "market",
+        "stripes",
+        "tasselled",
+        "the",
+        "with"
+      ],
+      "tags_only": [
+        "woven"
+      ],
+      "shared": [
+        "cotton",
+        "fringe",
+        "kikoi",
+        "red",
+        "throw"
+      ]
+    }
+  ],
+  "example_gaps": {
+    "text_only": [
+      "a",
+      "and",
+      "at",
+      "black",
+      "books",
+      "branded",
+      "claims",
+      "coast",
+      "colour",
+      "crossbody",
+      "deep",
+      "finish",
+      "for",
+      "handloomed",
+      "handwoven",
+      "in",
+      "kajiado",
+      "large",
+      "logo",
+      "made"
+    ],
+    "tags_only": [
+      "handmade",
+      "woven"
+    ]
+  },
+  "declared_limits": [
+    "lab-bow-v1 matches exact tokens only: 'trainers' vs 'sneakers' scores 0 even if CLIP would align them (no synonymy).",
+    "no stemming: 'woven' vs 'weave' are different tokens; 'kiondos' vs 'kiondo' would split.",
+    "Swahili loanwords only work if both sides spell them the same way (kiondo, sufuria, kikoi appear in fixtures as-is).",
+    "out-of-vocabulary words still inflate the vector NORM, which pushes agreement DOWN - gaps create false flags, not silent passes.",
+    "mitigation: CLIP cross-check (subword + visual matching) recorded in mismatch_report.json as an informational column; humans review flags before any seller sees them."
+  ],
+  "honesty_note": "coverage over n=4 fixture SKUs; a bigger catalog would widen the vocabulary, not fix the synonym gap."
+}

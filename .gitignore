@@ -1,0 +1,11 @@
+# Python caches (evidence/ outputs/ gold/ are deliberately TRACKED)
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets - Week 9 habit: never commit keys (none exist for this capstone anyway)
+.env
+.env.*
+*.key
+*.pem
+secrets/

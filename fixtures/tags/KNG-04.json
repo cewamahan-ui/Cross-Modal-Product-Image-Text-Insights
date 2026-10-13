@@ -1,0 +1,7 @@
+{
+  "sku": "KNG-04",
+  "image": "fixtures/images/KNG-04.png",
+  "tagger": "hand-authored teaching sidecar (stands in for a vision tagger; no vision model ran on this drawing)",
+  "tags": ["kikoi", "cotton", "throw", "fringe", "red", "woven"],
+  "privacy_tags": []
+}

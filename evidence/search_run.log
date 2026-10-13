@@ -1,0 +1,4 @@
+Recall@1 = 1.0 (2/2 queries over 4 SKUs) -- TOY: 2 hand-picked queries over 4 fixture SKUs - a smoke test of the ranking path, NOT a benchmark. Do not quote this as Recall@k performance.
+  'blue enamel pot': expected THD-02 @rank 1 -> HIT
+  'sisal tote bag': expected KND-01 @rank 1 -> HIT
+search example -> outputs\search_example.json

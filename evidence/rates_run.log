@@ -1,0 +1,5 @@
+overall flag_rate = 0.25 (1 of 4 listings flagged)
+  bags     flag_rate = 0.5 (1 of 2 listings flagged)
+  home     flag_rate = 0.0 (0 of 1 listings flagged)
+  kitchen  flag_rate = 0.0 (0 of 1 listings flagged)
+rates -> rates.json  [n is a teaching slice: the three teaching SKUs plus one I ad...]
